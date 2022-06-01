@@ -13,7 +13,7 @@ int main() {
 	cout << " Enter your marks " << endl;
 	cin >> Mark;
 	
-
+	
 	if (Mark >= 90) {
 		Grade = 'A';
 		
@@ -33,6 +33,9 @@ int main() {
 
 	}
 
+	cout << " Enter your holiday salary " << endl;
+	cin >> Salary;
+
 
 
 
@@ -41,6 +44,27 @@ int main() {
 	case 'A':
 			cout << " You can go to any University of your choice and you will get a car ";
 		break;
+
+	case 'B':
+		if (Salary > 5000) {
+			cout << " You can go to any University of your choice and you will get a car ";
+		}
+		else {
+			cout << " You can go to any university of your choice but you will not get a car";
+		}
+			break;
+
+	case 'C':
+		cout << " You can go to your nearest university ";
+		break;
+
+	case 'D':
+		cout << " You can't go to university ";
+		break;
+
+	default:
+		cout << " Invalid entry please only enter marks between 0 and 100 ";
+		
 
 	
 			
